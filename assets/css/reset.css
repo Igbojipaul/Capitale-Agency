@@ -1,0 +1,103 @@
+/* Basic CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling on iOS */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Default font, can be overridden */
+    line-height: 1.6;
+    background-color: #f8f8f8; /* A light background for now */
+    color: #333; /* Default text color */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below images */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent for now */
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Table resets */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Base styles for containers and sections */
+.container {
+    max-width: 1200px; /* Or whatever width feels right */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding on the sides for smaller screens */
+}
+
+.section-padding {
+    padding: 100px 0; /* Consistent vertical padding for sections */
+}
+
+/* Simple button styles - we'll make these much fancier later */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Example color */
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
